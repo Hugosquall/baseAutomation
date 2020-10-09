@@ -13,8 +13,9 @@ GoogleService.prototype.getGoogle = async function(url){
     console.log("GET URL".green)
     try{
         var baseUrl = this.urlService.getBaseUrl()
-        var header = this.util.getHeaderJson()
-        let resultRequest = await this.util.getUrl(baseUrl, header,'/Hello')
+        //var header = this.util.getHeaderJson()
+        let resultRequest = await this.util.getUrl(baseUrl, /* header ,*/'/posts')
+        return resultRequest
         console.log("✓ GET URL SUCESS")
     }
     catch(ex){
@@ -22,4 +23,4 @@ GoogleService.prototype.getGoogle = async function(url){
     }
 }
 
-module.exports = new GoogleService
+module.exports =  GoogleService

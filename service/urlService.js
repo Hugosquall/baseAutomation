@@ -11,7 +11,7 @@ var UrlService = function (that) {
 }
 
 UrlService.prototype.getBaseUrl = function () {
-  return this.urls.urlMarketPlace
+  return this.urls.baseUrl
 }
 
 module.exports = UrlService;

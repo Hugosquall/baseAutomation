@@ -1,5 +1,8 @@
 'use strict';
 
+var chai = require('chai')
+var chaiHttp = require('chai-http')
+
 const Enviroment = require('./environment/environment')
 const env = new Enviroment().getEnvironment()
 
